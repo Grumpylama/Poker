@@ -1,0 +1,16 @@
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.exe
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.deps.json
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.runtimeconfig.json
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.runtimeconfig.dev.json
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.dll
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\ref\poker.dll
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.pdb
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.AssemblyReference.cache
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.AssemblyInfoInputs.cache
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.AssemblyInfo.cs
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.dll
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\ref\poker.dll
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.pdb
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.genruntimeconfig.cache

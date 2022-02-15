@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oscar\\documents\\github\\poker\\poker\\poker.csproj",
+      "projectUniqueName": "C:\\Users\\Oscar\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj",
       "projectName": "poker",
-      "projectPath": "C:\\Users\\oscar\\documents\\github\\poker\\poker\\poker.csproj",
+      "projectPath": "C:\\Users\\Oscar\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj",
       "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oscar\\documents\\github\\poker\\poker\\obj\\",
+      "outputPath": "C:\\Users\\Oscar\\Source\\Repos\\Grumpylama\\Poker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
