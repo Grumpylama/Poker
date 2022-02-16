@@ -20,10 +20,18 @@ namespace poker
 
     public class Hand
     {
-        Deck Deck { get; set; }
-        public Hand(Deck deckie)
+        public List<Card> cards;
+        public Hand()
         {
-            Deck = deckie;
+            
+        }
+        public void removeCard(Card c)
+        {
+            
+        }
+        public void addCard(Card c)
+        {
+            cards.Add(c);
         }
     }
 }

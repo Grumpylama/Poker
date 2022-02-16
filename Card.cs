@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace poker
@@ -6,6 +6,7 @@ namespace poker
 
     public class Deck
     {
+        public List<Card> Cards;
         public void ResetDeck(int amount)
         {
 
@@ -32,27 +33,45 @@ namespace poker
 
         }
 
-        public List<Card> Cards;
+       
 
+        public Card DrawCard()
+        {
+            Random random = new Random();
+            int i = random.Next(Cards.Count - 1);
+            Card pickedCard = Cards[i];
+            Cards.RemoveAt(i);
+            return pickedCard;
 
+        }
+        
     }
     public class Card 
     {
-        public Card(int number)
-        {
-            this.number = number;
-        }
-        int number;
-
-        public void Draw()
+        public Card(int value)
         {
 
+            this.value = value;
+            if (value < 10)
+            {
+                this.displaynumber = value + 1;
+            }
+
         }
+        
+        public int value;
+        public int displaynumber;
+        public List<String> lines;
+        
     }
 
     public class HCard : Card 
     {
-        public HCard(int value) : base(value) { }
+        public HCard(int value) : base(value,) 
+        {
+            
+
+        }
     }
 
     public class CCard : Card
