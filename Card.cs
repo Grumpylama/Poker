@@ -29,7 +29,6 @@ namespace poker
                     Cards.Add(new DCard(i));
                 }
             }
-
         }
 
         public List<Card> Cards;
