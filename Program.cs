@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace poker
 {
@@ -9,6 +10,7 @@ namespace poker
         {
             Deck deck = new Deck();
             deck.ResetDeck();
+            
             foreach (Card c in deck.Cards)
             {
                 foreach (string s in c.lines)
@@ -16,6 +18,7 @@ namespace poker
                     Console.WriteLine(s);
                 }
             }
+           
             
         }
     }
