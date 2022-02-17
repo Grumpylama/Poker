@@ -18,7 +18,7 @@ namespace poker
 
     }
 
-    public class Hand
+    public class Hand : CardCollection
     {
         public List<Card> cards = new List<Card>();
         public Hand()
