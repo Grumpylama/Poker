@@ -21,9 +21,10 @@ namespace poker
     public class Hand
     {
         public List<Card> cards;
-        public Hand()
+        Player player;
+        public Hand(Player Player)
         {
-            
+            player = Player;
         }
         public void removeCard(Card c)
         {
