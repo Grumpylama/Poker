@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace poker
 {
+    public class CardCollection {}
 
-    public class Deck
+    public class Deck : CardCollection
     {
         public List<Card> Cards = new List<Card>();
 
@@ -55,7 +56,7 @@ namespace poker
         }
         
     }
-    public class Card 
+    public class Card
     {
         public Card(int value)
         {

@@ -5,6 +5,11 @@ namespace poker
 {
     public class Game
     {
+        CardCollection communityCards = new Hand();
+        public Game()
+        {
+ 
+        }
 
         //Represents just one round, which basically is the whole game
         //Just repeat this
@@ -17,11 +22,19 @@ namespace poker
 
         //Who has the better hand 
         //Could potentially use helping functions for different hands
-        public Player BetterHand(List<Player> players)
+        public Player HandPoints(Player player)
         {
+            List<Card> combo = new List<Card>();
+            for(int i = 0; i < player.hand.cards.Count; i++)
+            {
+                combo.Add(player.hand.cards[i]);
+            }
+            for (int i = 0; i < player.hand.cards.Count; i++)
+            {
+                combo.Add(player.hand.cards[i]);
+            }
 
-
-            return players[0];
+            return player;
         }
 
         public void PlayerTurn(Player player)
