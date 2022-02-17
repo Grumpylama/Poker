@@ -17,11 +17,11 @@ namespace poker
 
         //Who has the better hand 
         //Could potentially use helping functions for different hands
-        public Player BetterHand(List<Player> players)
+        public Player BetterHand(Player player)
         {
 
 
-            return players[0];
+            return player;
         }
 
         public void PlayerTurn(Player player)

@@ -22,3 +22,11 @@ C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.Co
 C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.dll
 C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\ref\poker.dll
 C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.pdb
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.exe
+C:\Users\Manxhuka\source\repos\Grumpylama\Poker\bin\Debug\net5.0\poker.deps.json
+C:\Users\Manxhuka\source\repos\Grumpylama\Poker\bin\Debug\net5.0\poker.runtimeconfig.json
+C:\Users\Manxhuka\source\repos\Grumpylama\Poker\bin\Debug\net5.0\poker.runtimeconfig.dev.json
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.dll
+C:\Users\Manxhuka\source\repos\Grumpylama\Poker\bin\Debug\net5.0\ref\poker.dll
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.pdb
+C:\Users\Manxhuka\source\repos\Grumpylama\Poker\obj\Debug\net5.0\poker.genruntimeconfig.cache

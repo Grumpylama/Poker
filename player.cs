@@ -20,7 +20,7 @@ namespace poker
 
     public class Hand
     {
-        public List<Card> cards;
+        public List<Card> cards = new List<Card>();
         Player player;
         public Hand(Player Player)
         {
