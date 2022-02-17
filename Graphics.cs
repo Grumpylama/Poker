@@ -6,14 +6,15 @@ namespace poker
 {
     public class Graphics
     {
+        int cardWitdh = 11;
 
-
-        public static void DrawBoard( Player p, Hand cC)
+        public void DrawBoard( Player p, Hand cC)
         {
             int height = Console.WindowHeight;
             int width = Console.WindowWidth;
             Console.Clear();
             Console.WriteLine();
+            // InitalWritingPoint = width / 2 - 
 
             
         }

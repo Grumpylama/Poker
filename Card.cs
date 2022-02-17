@@ -7,6 +7,18 @@ namespace poker
     {
         public List<Card> Cards = new List<Card>();
         public void AddCard(Card card) { return; }
+
+        public string getValues()
+        {
+            string s = "";
+            foreach (Card c in Cards)
+            {
+                s = s + c.compareValue + " ";
+            }
+            return s.Trim(' ');
+        }
+
+
     }
 
     public class Deck : CardCollection
@@ -65,7 +77,8 @@ namespace poker
         {
             this.value = value;  
         }
-        
+
+        public string compareValue;
         public int value;
         public int displaynumber;
         public List<String> lines = new List<string>();
@@ -116,6 +129,24 @@ namespace poker
         public HCard(int value) : base(value) 
         {
             
+            switch (value)
+            {
+                case < 11:
+                    compareValue = String.Format("{0}h", value);
+                    break;
+                case 11:
+                    compareValue = "jh";                   
+                    break;
+                case 12:
+                    compareValue = "qh";
+                    break;
+                case 13:
+                    compareValue = "kh";
+                    break;
+                case 14:
+                    compareValue = "ah";
+                    break;
+            }
 
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
@@ -133,7 +164,25 @@ namespace poker
         
         public CCard(int value) : base(value) 
         {
-            
+
+            switch (value)
+            {
+                case < 11:
+                    compareValue = String.Format("{0}c", value);
+                    break;
+                case 11:
+                    compareValue = "jc";
+                    break;
+                case 12:
+                    compareValue = "qc";
+                    break;
+                case 13:
+                    compareValue = "kc";
+                    break;
+                case 14:
+                    compareValue = "ac";
+                    break;
+            }
 
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
@@ -150,8 +199,25 @@ namespace poker
         
         public SCard(int value) : base(value) 
         {
+            switch (value)
+            {
+                case < 11:
+                    compareValue = String.Format("{0}s", value);
+                    break;
+                case 11:
+                    compareValue = "js";
+                    break;
+                case 12:
+                    compareValue = "qs";
+                    break;
+                case 13:
+                    compareValue = "ks";
+                    break;
+                case 14:
+                    compareValue = "as";
+                    break;
+            }
 
-            
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
             lines.Add("│         │");
@@ -167,7 +233,24 @@ namespace poker
         
         public DCard(int value) : base(value) 
         {
-           
+            switch (value)
+            {
+                case < 11:
+                    compareValue = String.Format("{0}d", value);
+                    break;
+                case 11:
+                    compareValue = "jd";
+                    break;
+                case 12:
+                    compareValue = "qd";
+                    break;
+                case 13:
+                    compareValue = "kd";
+                    break;
+                case 14:
+                    compareValue = "ad";
+                    break;
+            }
 
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
