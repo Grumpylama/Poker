@@ -51,3 +51,4 @@ C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.Co
 C:\Users\Oscar\source\repos\Grumpylama\Poker\bin\Debug\net5.0\HandEvaluator-Core.dll
 C:\Users\Oscar\source\repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.CopyComplete
 >>>>>>> 191f37014823cab79c21cdc60ade31deb99d31d6
+C:\Users\Manxhuka\source\repos\Grumpylama\Poker\bin\Debug\net5.0\HandEvaluator-Core.dll
