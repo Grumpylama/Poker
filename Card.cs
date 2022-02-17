@@ -69,8 +69,10 @@ namespace poker
         {
             switch (value)
             {
-                case <= 10:
-                    return String.Format("│{0}        │", value);
+                case < 10:
+                    return String.Format("│ {0}       │", value);
+                case 10:
+                    return "│ 10      │";
                 case 11:
                     return "│ Kn      │";
                 case 12:
@@ -86,8 +88,10 @@ namespace poker
         {
             switch (value)
             {
-                case < 11:
+                case < 10:
                     return String.Format("│       {0} │", value);
+                case 10:
+                    return "│      10 │";
                 case 11:
                     return "│      Kn │";
                 case 12:
@@ -101,8 +105,6 @@ namespace poker
         }
 
     }
-
-    
 
     public class HCard : Card 
     {
@@ -132,7 +134,7 @@ namespace poker
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
             lines.Add("│         │");
-            lines.Add("│    ♥    │");
+            lines.Add("│    ♣    │");
             lines.Add("│         │");
             lines.Add(GetLowerValueRow());
             lines.Add("└─────────┘");
@@ -144,12 +146,12 @@ namespace poker
         
         public SCard(int value) : base(value) 
         {
-            
 
+            
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
             lines.Add("│         │");
-            lines.Add("│    ♥    │");
+            lines.Add("│    ♠    │");
             lines.Add("│         │");
             lines.Add(GetLowerValueRow());
             lines.Add("└─────────┘");
@@ -166,7 +168,7 @@ namespace poker
             lines.Add("┌─────────┐");
             lines.Add(GetUpperValueRow());
             lines.Add("│         │");
-            lines.Add("│    ♥    │");
+            lines.Add("│    ♦    │");
             lines.Add("│         │");
             lines.Add(GetLowerValueRow());
             lines.Add("└─────────┘");
