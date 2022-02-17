@@ -66,26 +66,71 @@ namespace poker
 
     public class HCard : Card 
     {
-        public HCard(int value) : base(value,) 
+        int val;
+        public HCard(int value) : base(value) 
         {
-            
+            val = value;
+
+                          lines.Add("┌─────────┐");
+            lines.Add(String.Format("│{0}        │", val));
+                          lines.Add("│         │");
+                          lines.Add("│    ♥    │");
+                          lines.Add("│         │");
+            lines.Add(String.Format("│        {0}│", val));
+                          lines.Add("└─────────┘");
 
         }
     }
 
     public class CCard : Card
     {
-        public CCard(int value) : base(value) { }
+        int val;
+        public CCard(int value) : base(value) 
+        {
+            val = value;
+
+                          lines.Add("┌─────────┐");
+            lines.Add(String.Format("│{0}        │", val));
+                          lines.Add("│         │");
+                          lines.Add("│    ♣    │");
+                          lines.Add("│         │");
+            lines.Add(String.Format("│        {0}│", val));
+                          lines.Add("└─────────┘");
+        }
     }
 
     public class SCard : Card
     {
-        public SCard(int value) : base(value) { }
+        int val;
+        public SCard(int value) : base(value) 
+        {
+            val = value;
+
+                          lines.Add("┌─────────┐");
+            lines.Add(String.Format("│{0}        │", val));
+                          lines.Add("│         │");
+                          lines.Add("│    ♠    │");
+                          lines.Add("│         │");
+            lines.Add(String.Format("│        {0}│", val));
+                          lines.Add("└─────────┘");
+        }
     }
     
     public class DCard : Card
     {
-        public DCard(int value) : base(value) { }
+        int val;
+        public DCard(int value) : base(value) 
+        {
+            val = value;
+
+                          lines.Add("┌─────────┐");
+            lines.Add(String.Format("│{0}        │", val));
+                          lines.Add("│         │");
+                          lines.Add("│    ♦    │");
+                          lines.Add("│         │");
+            lines.Add(String.Format("│        {0}│", val));
+                          lines.Add("└─────────┘");
+        }
     }
 }
 
