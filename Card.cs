@@ -6,26 +6,35 @@ namespace poker
 
     public class Deck
     {
-        public List<Card> Cards;
+        public List<Card> Cards = new List<Card>();
+
+        public Deck()
+        {
+            
+        }
+        public void ResetDeck()
+        {
+            ResetDeck(1);
+        }
         public void ResetDeck(int amount)
         {
 
             Cards.Clear();
             for(int y = 1; y <= amount; y++)
             {
-                for (int i = 1; i <= 13; i++)
+                for (int i = 2; i <= 14; i++)
                 {
                     Cards.Add(new HCard(i));
                 }
-                for (int i = 1; i <= 13; i++)
+                for (int i = 2; i <= 14; i++)
                 {
                     Cards.Add(new CCard(i));
                 }
-                for (int i = 1; i <= 13; i++)
+                for (int i = 2; i <= 14; i++)
                 {
                     Cards.Add(new SCard(i));
                 }
-                for (int i = 1; i <= 13; i++)
+                for (int i = 2; i <= 14; i++)
                 {
                     Cards.Add(new DCard(i));
                 }
@@ -50,87 +59,117 @@ namespace poker
     {
         public Card(int value)
         {
-
-            this.value = value;
-            if (value < 10)
-            {
-                this.displaynumber = value + 1;
-            }
-
+            this.value = value;  
         }
         
         public int value;
         public int displaynumber;
-        public List<String> lines;
-        
+        public List<String> lines = new List<string>();
+        protected string GetUpperValueRow()
+        {
+            switch (value)
+            {
+                case <= 10:
+                    return String.Format("│{0}        │", value);
+                case 11:
+                    return "│ Kn      │";
+                case 12:
+                    return "│ Q       │";
+                case 13:
+                    return "│ Ki      │";
+                case 14:
+                    return "│ A       │";
+            }
+            throw new Exception("Invalid Card creation");
+        }
+        protected string GetLowerValueRow()
+        {
+            switch (value)
+            {
+                case < 11:
+                    return String.Format("│       {0} │", value);
+                case 11:
+                    return "│      Kn │";
+                case 12:
+                    return "│       Q │";
+                case 13:
+                    return "│      Ki │";
+                case 14:
+                    return "│       A │";
+            }
+            throw new Exception("Invalid Card creation");
+        }
+
     }
+
+    
 
     public class HCard : Card 
     {
-        int val;
+        
         public HCard(int value) : base(value) 
         {
-            val = value;
+            
 
-                          lines.Add("┌─────────┐");
-            lines.Add(String.Format("│{0}        │", val));
-                          lines.Add("│         │");
-                          lines.Add("│    ♥    │");
-                          lines.Add("│         │");
-            lines.Add(String.Format("│        {0}│", val));
-                          lines.Add("└─────────┘");
+            lines.Add("┌─────────┐");
+            lines.Add(GetUpperValueRow());
+            lines.Add("│         │");
+            lines.Add("│    ♥    │");
+            lines.Add("│         │");
+            lines.Add(GetLowerValueRow());
+            lines.Add("└─────────┘");
 
         }
     }
 
     public class CCard : Card
     {
-        int val;
+        
         public CCard(int value) : base(value) 
         {
-            val = value;
+            
 
-                          lines.Add("┌─────────┐");
-            lines.Add(String.Format("│{0}        │", val));
-                          lines.Add("│         │");
-                          lines.Add("│    ♣    │");
-                          lines.Add("│         │");
-            lines.Add(String.Format("│        {0}│", val));
-                          lines.Add("└─────────┘");
+            lines.Add("┌─────────┐");
+            lines.Add(GetUpperValueRow());
+            lines.Add("│         │");
+            lines.Add("│    ♥    │");
+            lines.Add("│         │");
+            lines.Add(GetLowerValueRow());
+            lines.Add("└─────────┘");
         }
     }
 
     public class SCard : Card
     {
-        int val;
+        
         public SCard(int value) : base(value) 
         {
-            val = value;
+            
 
-                          lines.Add("┌─────────┐");
-            lines.Add(String.Format("│{0}        │", val));
-                          lines.Add("│         │");
-                          lines.Add("│    ♠    │");
-                          lines.Add("│         │");
-            lines.Add(String.Format("│        {0}│", val));
-                          lines.Add("└─────────┘");
+            lines.Add("┌─────────┐");
+            lines.Add(GetUpperValueRow());
+            lines.Add("│         │");
+            lines.Add("│    ♥    │");
+            lines.Add("│         │");
+            lines.Add(GetLowerValueRow());
+            lines.Add("└─────────┘");
         }
     }
     
     public class DCard : Card
     {
-        int val;
+        
         public DCard(int value) : base(value) 
         {
-            val = value;
+           
 
-                          lines.Add("┌─────────┐");
-            lines.Add(String.Format("│{0}        │", val));
-                          lines.Add("│         │");
-                          lines.Add("│    ♦    │");
-                          lines.Add("│         │");
-            lines.Add(String.Format("│        {0}│", val));
-                          lines.Add("└─────────┘");
+            lines.Add("┌─────────┐");
+            lines.Add(GetUpperValueRow());
+            lines.Add("│         │");
+            lines.Add("│    ♥    │");
+            lines.Add("│         │");
+            lines.Add(GetLowerValueRow());
+            lines.Add("└─────────┘");
         }
     }
 }
