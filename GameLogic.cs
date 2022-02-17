@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
+
 namespace poker
 {
     public class Game
@@ -14,10 +15,7 @@ namespace poker
             for(int i = 0; i < 5; i++)
             {
                 communityCards.AddCard(deck.DrawCard());
-<<<<<<< HEAD
 
-=======
->>>>>>> ead50e584b9edb82594915fbd31786dc81e5f3c2
             }
 
             return communityCards;

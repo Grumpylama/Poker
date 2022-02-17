@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Manxhuka\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj": {}
+    "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Manxhuka\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj": {
+    "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Manxhuka\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj",
+        "projectUniqueName": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
         "projectName": "poker",
-        "projectPath": "C:\\Users\\Manxhuka\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj",
-        "packagesPath": "C:\\Users\\Manxhuka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Manxhuka\\Source\\Repos\\Grumpylama\\Poker\\obj\\",
+        "projectPath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Manxhuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "HandEvaluator-Core": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+ppJlsPrMugapBw/kfj1GIb+66zzc8h5MmR/a+jgM3gnjfCguSpu8wx1kRv4xSVzzJp6+mZp6g4x0or8RAG+rA==",
+  "dgSpecHash": "p4IAGj+E9nHppUbS0ToAYPATuxXjTwwpnV54phC7nKDE/7M/f/NvVx5hnqtuf2JV93BsDX8IlQ/NTu9yx5RwFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Manxhuka\\Source\\Repos\\Grumpylama\\Poker\\poker.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Oscar\\.nuget\\packages\\handevaluator-core\\1.0.1\\handevaluator-core.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
