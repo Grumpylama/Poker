@@ -3,12 +3,8 @@ build_property.TargetFramework = net5.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
-build_property.PublishSingleFile = 
-build_property.IncludeAllContentForSelfExtract = 
-build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = poker
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\
-=======
-build_property.ProjectDir = C:\Users\Oscar\source\repos\Grumpylama\Poker\
->>>>>>> ead50e584b9edb82594915fbd31786dc81e5f3c2

@@ -11,9 +11,6 @@ namespace poker
         static void Main(string[] args)
         {
             
-            
-            
-
             Deck deck = new Deck();
             deck.ResetDeck();
             

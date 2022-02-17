@@ -41,3 +41,8 @@ C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\OddsGrid.OddsGrid.
 C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\VideoPoker.Form1.resources
 C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.PokerHandEvalSrc.VideoPoker.Properties.Resources.resources
 C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.GenerateResource.cache
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\CardVectorImage.dll
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\HandEvaluator.dll
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\OddsGrid.dll
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\HandEvaluator.xml
+C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.CopyComplete
