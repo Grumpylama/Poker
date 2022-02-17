@@ -6,7 +6,7 @@ namespace poker
     public class Player
     {
         public int money { get; set; }
-        Hand hand { get; }
+        public Hand hand { get; }
         Deck deck { get; }
 
         public Player(int Money, Hand Hand, Deck Deck)
@@ -21,10 +21,9 @@ namespace poker
     public class Hand
     {
         public List<Card> cards = new List<Card>();
-        Player player;
-        public Hand(Player Player)
+        public Hand()
         {
-            player = Player;
+            
         }
         public void removeCard(Card c)
         {

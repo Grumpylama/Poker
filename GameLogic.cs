@@ -17,9 +17,12 @@ namespace poker
 
         //Who has the better hand 
         //Could potentially use helping functions for different hands
-        public Player BetterHand(Player player)
+        public Player HandPoints(Player player)
         {
+            for(int i = 0; i < player.hand.cards.Count(); i++)
+            {
 
+            }
 
             return player;
         }
