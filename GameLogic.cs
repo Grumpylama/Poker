@@ -1,18 +1,19 @@
 using System;
 using System.Collections.Generic;
+using HoldemHand;
 
 namespace poker
 {
     public class Game
     {
-        CardCollection communityCards = new Hand();
+        CardCollection communityCards = new CardCollection();
         Deck deck = new Deck();
 
         public CardCollection CommunityC()
         {
             for(int i = 0; i < 5; i++)
             {
-                communityCards.Add(deck.DrawCard());
+                communityCards.AddCard(deck.DrawCard());
             }
 
             return communityCards;
@@ -36,10 +37,12 @@ namespace poker
             {
                 combo.Add(player.hand.cards[i]);
             }
-            for (int i = 0; i < player.hand.cards.Count; i++)
+            for (int i = 0; i < communityCards.Cards.Count; i++)
             {
-                combo.Add(player.hand.cards[i]);
+                combo.Add(communityCards.Cards[i]);
             }
+
+
 
             return player;
         }
