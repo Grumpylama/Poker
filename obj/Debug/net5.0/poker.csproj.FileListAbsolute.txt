@@ -30,3 +30,14 @@ C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.dll
 C:\Users\Manxhuka\source\repos\Grumpylama\Poker\bin\Debug\net5.0\ref\poker.dll
 C:\Users\Manxhuka\Source\Repos\Grumpylama\Poker\bin\Debug\net5.0\poker.pdb
 C:\Users\Manxhuka\source\repos\Grumpylama\Poker\obj\Debug\net5.0\poker.genruntimeconfig.cache
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\Benchmark.Form1.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.PokerHandEvalSrc.Benchmark.Properties.Resources.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\CardVectorImage.CardVector.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\HandOdds.Form1.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.PokerHandEvalSrc.HandOdds.Properties.Resources.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\OddsGridApp.Form1.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.PokerHandEvalSrc.OddsGridApp.Properties.Resources.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\OddsGrid.OddsGrid.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\VideoPoker.Form1.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.PokerHandEvalSrc.VideoPoker.Properties.Resources.resources
+C:\Users\Oscar\Source\Repos\Grumpylama\Poker\obj\Debug\net5.0\poker.csproj.GenerateResource.cache
