@@ -33,7 +33,8 @@ namespace poker
         }
 
        
-
+        //Vi kanske kan göra så att den tar en card som parameter
+        // och sen ritar upp det kortet?
         public Card DrawCard()
         {
             Random random = new Random();
