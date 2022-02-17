@@ -13,7 +13,11 @@ namespace poker
         {
             for(int i = 0; i < 5; i++)
             {
+<<<<<<< HEAD
                 communityCards.AddCard(deck.DrawCard());
+=======
+                //communityCards.Add(deck.DrawCard());
+>>>>>>> 15759e14ad4cb21cd658edc4fb8502647ba0a444
             }
 
             return communityCards;
