@@ -12,7 +12,7 @@ namespace poker
         {
             for(int i = 0; i < 5; i++)
             {
-                communityCards.Add(deck.DrawCard());
+                //communityCards.Add(deck.DrawCard());
             }
 
             return communityCards;
