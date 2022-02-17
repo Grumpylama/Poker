@@ -6,9 +6,16 @@ namespace poker
     public class Game
     {
         CardCollection communityCards = new Hand();
-        public Game()
+        Deck deck = new Deck();
+
+        public CardCollection CommunityC()
         {
- 
+            for(int i = 0; i < 5; i++)
+            {
+                communityCards.Add(deck.DrawCard());
+            }
+
+            return communityCards;
         }
 
         //Represents just one round, which basically is the whole game

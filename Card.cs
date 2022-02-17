@@ -3,11 +3,14 @@ using System.Collections.Generic;
 
 namespace poker
 {
-    public class CardCollection {}
+    public class CardCollection 
+    {
+        public List<Card> Cards = new List<Card>();
+        public void AddCard(Card card) { return; }
+    }
 
     public class Deck : CardCollection
     {
-        public List<Card> Cards = new List<Card>();
 
         public Deck()
         {
