@@ -11,12 +11,9 @@ namespace poker
         {
             int height = Console.WindowHeight;
             int width = Console.WindowWidth;
-            int c = h.cards.Count;
-            
+            int c = h.cards.Count;            
 
         }
-
-
         
     }
         
