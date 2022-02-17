@@ -5,7 +5,7 @@ namespace poker
 {
     public class Player
     {
-        int money { get; set; }
+        public int money { get; set; }
         Hand hand { get; }
         Deck deck { get; }
 

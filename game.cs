@@ -5,7 +5,6 @@ namespace poker
 {
     public class Game
     {
-        int moneyPool;
 
         //Represents just one round, which basically is the whole game
         //Just repeat this
@@ -25,13 +24,9 @@ namespace poker
             return players[0];
         }
 
-        //Temporary version
         public void PlayerTurn(Player player)
         {
-            String input = Console.ReadLine();
-
             //Raise
-
             //Call
             //Fold
         }

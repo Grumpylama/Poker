@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poker", "poker.csproj", "{66297EB8-3D96-4960-86F0-1692132D068C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "poker", "poker.csproj", "{66297EB8-3D96-4960-86F0-1692132D068C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{362529C6-A9E3-4B1B-857F-E99CAF530C6C}"
+	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{66297EB8-3D96-4960-86F0-1692132D068C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +32,11 @@ Global
 		{66297EB8-3D96-4960-86F0-1692132D068C}.Release|x64.Build.0 = Release|Any CPU
 		{66297EB8-3D96-4960-86F0-1692132D068C}.Release|x86.ActiveCfg = Release|Any CPU
 		{66297EB8-3D96-4960-86F0-1692132D068C}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6861719-2E2A-4D11-8E2D-17DFAEBABA4F}
 	EndGlobalSection
 EndGlobal
