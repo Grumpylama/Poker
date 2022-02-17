@@ -11,7 +11,7 @@ namespace poker
         static void Main(string[] args)
         {
             
-            Console.S dowHeight);
+            
             
 
             Deck deck = new Deck();
@@ -24,14 +24,10 @@ namespace poker
                     Console.WriteLine(s);
                 }
             }
-            
+            String[] strings = new string[] { null, "hello" };
 
-            while (true)
-            {
-                Thread.Sleep(1000);
-                Console.WriteLine(Console.WindowWidth + "  " + Console.WindowHeight);
-                //ConsoleHelper.SetCurrentFont("Consolas", 40);
-            }
+            Graphics g = new Graphics();
+            g.askForInput(new Player(123, new Hand(), new Deck()), new Hand(), " ", " ", "");
             
             
         }
