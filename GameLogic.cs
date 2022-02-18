@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using HoldemHand;
 
 
 
@@ -27,26 +28,40 @@ namespace poker
         {
             
 
+        }
 
+        public List<Player> Winners(List<Player> players)
+        {
+            List<Player> list = new List<Player>();
+            HoldemHand.Hand h = HandPoints(players[0]);
+
+            for (int i = 1; i < players.Count; i++)
+            {
+                if (HandPoints(players[i]) > h)
+                {
+                    h = HandPoints(players[i]);
+                }
+            }
+
+            for (int i = 0; i < players.Count; i++)
+            {
+                if(HandPoints(players[i]) == h)
+                {
+                    list.Add(players[i]);
+                }
+            }
+
+            return players;
         }
 
         //Who has the better hand 
         //Could potentially use helping functions for different hands
-        public Player HandPoints(Player player)
+        public HoldemHand.Hand HandPoints(Player player)
         {
-            List<Card> combo = new List<Card>();
-            for(int i = 0; i < player.hand.Cards.Count; i++)
-            {
-                combo.Add(player.hand.Cards[i]);
-            }
-            for (int i = 0; i < communityCards.Cards.Count; i++)
-            {
-                combo.Add(communityCards.Cards[i]);
-            }
+            CardCollection c = CommunityC();
+            HoldemHand.Hand hand = new HoldemHand.Hand(player.hand.getValues(), c.getValues());
 
-
-
-            return player;
+            return hand;
         }
 
         public void PlayerTurn(Player player)
