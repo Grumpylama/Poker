@@ -6,21 +6,22 @@ namespace poker
     public class Player
     {
         public int money { get; set; }
-        public Hand hand { get; }
-        Deck deck { get; }
+        public Hand hand { get; private set; }
+        public string name { get; private set; }
 
-        public Player(int Money, Hand Hand, Deck Deck)
+        public Player(int Money, Hand Hand, string name)
         {
             money = Money;
-            hand = Hand;
-            deck = Deck;
+            this.hand = Hand;
+            this.name = name;
+            
         }
 
     }
 
     public class Hand : CardCollection
     {
-        public List<Card> cards = new List<Card>();
+        
         public Hand()
         {
             
@@ -29,9 +30,6 @@ namespace poker
         {
             
         }
-        public void addCard(Card c)
-        {
-            cards.Add(c);
-        }
+        
     }
 }

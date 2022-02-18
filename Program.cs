@@ -14,7 +14,7 @@ namespace poker
             
 =======
 
-
+            ConsoleHelper.SetCurrentFont("Consolas", 40);
 
 
 >>>>>>> 790187fdee911e915e4aed48371e5c1655aa84c1
@@ -23,17 +23,24 @@ namespace poker
 
             Console.WriteLine(deck.getValues());
 
-            //foreach (Card c in deck.Cards)
-            //{
-            //    foreach (string s in c.lines)
-            //    {
-            //        Console.WriteLine(s);
-            //    }
-            //}
-            //String[] strings = new string[] { null, "hello" };
+            foreach (Card c in deck.Cards)
+            {
+                foreach (string s in c.lines)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+            String[] strings = new string[] { null, "hello" };
 
-            //Graphics g = new Graphics();
-            //g.askForInput(new Player(123, new Hand(), new Deck()), new Hand(), " ", " ", "");
+            Graphics g = new Graphics();
+            CardCollection  cc = new CardCollection();
+            cc.addCard(deck.DrawCard());
+            cc.addCard(deck.DrawCard());
+            cc.addCard(deck.DrawCard());
+            Hand hand = new Hand();
+            hand.addCard(deck.DrawCard());
+            hand.addCard(deck.DrawCard());
+            g.askForInput(new Player(123, hand, "alfred"), cc, " ", " ", "");
 
 
         }
