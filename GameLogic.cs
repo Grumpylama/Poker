@@ -26,10 +26,15 @@ namespace poker
         //Just repeat this
         public void GameRound(List<Player> players)
         {
-            
+            //Cards are dealt
+            //3 community cards on table
+            //Start at random player (raise, call, fold)
+            //Repeat until all people who havent folded have called the big blind
+            //
 
         }
 
+        //Decides who won the round (is decided immediately after the deck is instantiated and cards dealt to players)
         public List<Player> Winners(List<Player> players)
         {
             List<Player> list = new List<Player>();
