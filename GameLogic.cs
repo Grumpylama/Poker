@@ -14,7 +14,7 @@ namespace poker
         {
             for(int i = 0; i < 5; i++)
             {
-                communityCards.AddCard(deck.DrawCard());
+                communityCards.addCard(deck.DrawCard());
 
             }
 
@@ -35,9 +35,9 @@ namespace poker
         public Player HandPoints(Player player)
         {
             List<Card> combo = new List<Card>();
-            for(int i = 0; i < player.hand.cards.Count; i++)
+            for(int i = 0; i < player.hand.Cards.Count; i++)
             {
-                combo.Add(player.hand.cards[i]);
+                combo.Add(player.hand.Cards[i]);
             }
             for (int i = 0; i < communityCards.Cards.Count; i++)
             {

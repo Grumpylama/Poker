@@ -6,7 +6,10 @@ namespace poker
     public class CardCollection 
     {
         public List<Card> Cards = new List<Card>();
-        public void AddCard(Card card) { return; }
+        public void addCard(Card card) 
+        {
+            Cards.Add(card);
+        }
 
         public string getValues()
         {
