@@ -27,7 +27,7 @@ namespace poker
         public void GameRound()
         {
             //Shuffles deck
-            ShuffleDeck();
+            
 
             //Betting round
             int temp = playerList[0].money;
@@ -139,20 +139,6 @@ namespace poker
 
         //Takes a deck and shuffles it
         //Returns a shuffled copy of the deck
-        private List<Card> ShuffleDeck()
-        {
-            //Raise
-            //Call
-            //Fold
-
-            while(copy.Count > 0)
-            {
-                int randomIndex = rand.Next(copy.Count);
-                newList.Add(copy[randomIndex]);
-                copy.RemoveAt(randomIndex);
-            }
-
-            return newList;
-        }
+        
     }
 }
