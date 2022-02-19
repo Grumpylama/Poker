@@ -15,9 +15,9 @@ namespace poker
             int width = Console.WindowWidth;
             Console.Clear();
             string[] sa = new string[3];
-            sa[0] = o1;
-            sa[1] = o2;
-            sa[2] = o3;
+            sa[0] = "  " + o1;
+            sa[1] = "  " + o2;
+            sa[2] = "  " + o3;
             string stateString = "";
             switch (state)
             {

@@ -9,15 +9,8 @@ namespace poker
     {
         
         static void Main(string[] args)
-        {
-<<<<<<< HEAD
-            
-=======
-
+        {            
             ConsoleHelper.SetCurrentFont("Consolas", 40);
-
-
->>>>>>> 790187fdee911e915e4aed48371e5c1655aa84c1
             Deck deck = new Deck();
             deck.ResetDeck();
 
@@ -40,7 +33,7 @@ namespace poker
             Hand hand = new Hand();
             hand.addCard(deck.DrawCard());
             hand.addCard(deck.DrawCard());
-            g.askForInput(new Player(123, hand, "alfred"), cc, " ", " ", "");
+            g.askForInput(new Player(123, hand, "alfred"), cc, "Raise", "Call", "Fold");
 
 
         }

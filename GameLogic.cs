@@ -10,6 +10,7 @@ namespace poker
     {
         CardCollection communityCards = new CardCollection();
         Deck deck = new Deck();
+        Graphics g = new Graphics();
 
         public CardCollection CommunityC()
         {
@@ -66,6 +67,7 @@ namespace poker
 
         public void PlayerTurn(Player player)
         {
+            g.askForInput(player, communityCards, "Raise", "Call", "Fold");
             //Raise
             //Call
             //Fold
