@@ -9,8 +9,18 @@ namespace poker
     {
         
         static void Main(string[] args)
-        {            
+        {
+
+            
+=======
+
+            
+=======
+
             ConsoleHelper.SetCurrentFont("Consolas", 40);
+
+
+>>>>>>> 790187fdee911e915e4aed48371e5c1655aa84c1
             Deck deck = new Deck();
             deck.ResetDeck();
 
