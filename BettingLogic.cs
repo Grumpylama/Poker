@@ -1,33 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace poker
 {
 	public class BettingLogic
 	{
-		Player player;
 
 		//The total sum of money that is set on the table
 		private int Pool { get; set; }
 
 		//The amount people are willing to bet during said round
 		private int betMoney = 0;
-		int bigBlind;
-
-		public BettingLogic(Player Player, int SmallBlind)
-		{
-			player = Player;
-			bigBlind = SmallBlind;
-
-		}
+		int bigBlind = 10;
 
 		//Match the amount of bigBlind
-		public void Call()
+		public void Call(Player player)
 		{
 			betMoney += bigBlind;
+			player.money -= bigBlind;
 		}
 
 		//Increase the bet within player money limits
-		public void Raise(int amount)
+		public void Raise(int amount, Player player)
         {
 			//Set amount to how much more than the bigBlind you want to pay
 			amount += bigBlind;
@@ -35,13 +29,8 @@ namespace poker
 			betMoney += amount;
 			//Decrease the player money
 			player.money -= amount;
-        }
-
-		//Throw the hand away, skip the round
-		//Rendered not able to play for rest of the round.
-		public void Fold()
-        {
-
+			//Update bigBlind
+			bigBlind = amount;
         }
 
 		public void RoundEnd()
@@ -49,11 +38,14 @@ namespace poker
 			Pool += betMoney;
         }
 
-		public void Win(int winners)
+		public void WinningPrize(List<Player> winners)
         {
 			//This algorithm is unchecked and probably doesnt work
-			int share = Pool / winners;
-			player.money += share;
+			int share = winners.Count / Pool;
+			for(int i = 0; i < winners.Count; i++)
+            {
+				winners[i].money += share;
+			}
         }
 	}
 }

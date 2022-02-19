@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
+    "C:\\Users\\Manxhuka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
+      "projectUniqueName": "C:\\Users\\Manxhuka\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
       "projectName": "poker",
-      "projectPath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
-      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\obj\\",
+      "projectPath": "C:\\Users\\Manxhuka\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
+      "packagesPath": "C:\\Users\\Manxhuka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Manxhuka\\source\\repos\\Grumpylama\\Poker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Manxhuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
