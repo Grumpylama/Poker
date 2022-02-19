@@ -70,7 +70,6 @@ namespace poker
             Card pickedCard = Cards[i];
             Cards.RemoveAt(i);
             return pickedCard;
-
         }
         
     }

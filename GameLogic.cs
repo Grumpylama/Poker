@@ -37,10 +37,15 @@ namespace poker
         //and then go for end screen
         public void GameRound()
         {
+<<<<<<< HEAD
             for(int i = 0; i < playerList.Count; i++)
             {
                 InstantiateHand(playerList[i]);
             }
+=======
+            //Shuffles deck
+            
+>>>>>>> d3238d76029513e0186f492d302ed7fcccfc7737
 
             //Betting round
             int temp = playerList[0].money;
@@ -168,20 +173,6 @@ namespace poker
 
         //Takes a deck and shuffles it
         //Returns a shuffled copy of the deck
-        private List<Card> ShuffleDeck()
-        {
-            List<Card> copy = new List<Card> (deckCards.Cards);
-            List<Card> newList = new List<Card>();
-            Random rand = new Random();
-
-            while(copy.Count > 0)
-            {
-                int randomIndex = rand.Next(copy.Count);
-                newList.Add(copy[randomIndex]);
-                copy.RemoveAt(randomIndex);
-            }
-
-            return newList;
-        }
+        
     }
 }
