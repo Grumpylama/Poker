@@ -37,15 +37,10 @@ namespace poker
         //and then go for end screen
         public void GameRound()
         {
-<<<<<<< HEAD
             for(int i = 0; i < playerList.Count; i++)
             {
                 InstantiateHand(playerList[i]);
             }
-=======
-            //Shuffles deck
-            
->>>>>>> d3238d76029513e0186f492d302ed7fcccfc7737
 
             //Betting round
             int temp = playerList[0].money;
