@@ -20,14 +20,27 @@ namespace poker
             deckCards = Deck;
         }
 
+        public void StartGame()
+        {
+            GameRound();
+            //Next Community card
+            GameRound();
+            //Last Community card
+            GameRound();
+            //Announces winners of the round
+            Winners();
+        }
+
         //Represents one full betting round 
         //Just repeat this until all
         //Community Cards are on the table
         //and then go for end screen
         public void GameRound()
         {
-            //Shuffles deck
-            
+            for(int i = 0; i < playerList.Count; i++)
+            {
+                InstantiateHand(playerList[i]);
+            }
 
             //Betting round
             int temp = playerList[0].money;
@@ -99,6 +112,14 @@ namespace poker
             return communityCards;
         }
 
+        public void InstantiateHand(Player player)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                player.hand.addCard(deckCards.DrawCard());
+            }
+        }
+
         //Decides who won the round (is decided immediately after the deck is instantiated and cards dealt to players)
         public List<Player> Winners()
         {
@@ -123,6 +144,14 @@ namespace poker
                 }
             }
 
+            Console.Write("Congratulations ");
+            for(int i = 0;i < playerList.Count; i++)
+            {
+                Console.Write(list[i].name + ", ");
+            }
+            Console.Write("for being the winners of this round!");
+
+            b.WinningPrize(list);
             return list;
         }
 

@@ -162,6 +162,7 @@ namespace poker
         void DrawMenu(int state)
         {
             int height = Console.WindowHeight;
+            //Width not used
             int width = Console.WindowWidth;
             
 
@@ -208,7 +209,7 @@ namespace poker
                         switch (state)
                         {
                             case 0:
-                                //gl.StartGame();
+                                gl.StartGame();
                                 break;
                             case 1: 
                                 break;
