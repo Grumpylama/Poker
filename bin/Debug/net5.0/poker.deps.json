@@ -8,35 +8,17 @@
     ".NETCoreApp,Version=v5.0": {
       "poker/1.0.0": {
         "dependencies": {
-          "CardVectorImage": "1.2.0.0",
-          "HandEvaluator": "1.2.0.0",
-          "OddsGrid": "1.2.0.0"
+          "HandEvaluator-Core": "1.0.1"
         },
         "runtime": {
           "poker.dll": {}
         }
       },
-      "CardVectorImage/1.2.0.0": {
+      "HandEvaluator-Core/1.0.1": {
         "runtime": {
-          "CardVectorImage.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "1.2.0.0"
-          }
-        }
-      },
-      "HandEvaluator/1.2.0.0": {
-        "runtime": {
-          "HandEvaluator.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "1.2.0.0"
-          }
-        }
-      },
-      "OddsGrid/1.2.0.0": {
-        "runtime": {
-          "OddsGrid.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "1.2.0.0"
+          "lib/net5.0/HandEvaluator-Core.dll": {
+            "assemblyVersion": "1.0.1.1",
+            "fileVersion": "1.0.1.1"
           }
         }
       }
@@ -48,20 +30,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CardVectorImage/1.2.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "HandEvaluator/1.2.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "OddsGrid/1.2.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
+    "HandEvaluator-Core/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2y4UFQPPL1RF4p/MIPZvt58qtSs4S4HuDEVE4+GrAjQkeD8MRRzRDKjnFv4kqGnrfzOcF7Vcpb/NKGHvbH7ltg==",
+      "path": "handevaluator-core/1.0.1",
+      "hashPath": "handevaluator-core.1.0.1.nupkg.sha512"
     }
   }
 }

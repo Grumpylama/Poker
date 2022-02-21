@@ -159,18 +159,17 @@ namespace poker
 
 
 
-        void DrawMenu(int state)
+        void DrawMenu(int state, string s1, string s2, string s3)
         {
             int height = Console.WindowHeight;
             //Width not used
             int width = Console.WindowWidth;
             
-
-            
-            string s1 = "Play";
-            string s2 = "Difficulty";
-            string s3 = "Exit";
-
+            string spaces = "";
+            for (int i = 0; i < (width / 2) - (2 * cardWitdh) + 4; i++)
+            {
+                spaces += " ";
+            }
             switch (state)
             {
                 case 0:
@@ -185,22 +184,37 @@ namespace poker
             }
             string[] sa = new string[] {s1, s2, s3};
             Console.Clear();
-            for(int i = 0; i < height / 2 - 3; i++) { Console.WriteLine(); }
+            for(int i = 0; i < height / 2 - 3; i++)  
+                Console.WriteLine(); 
 
             for(int i = 0; i < sa.Length; i++)
             {
-                Console.WriteLine(sa[i]);
+                Console.WriteLine(spaces + sa[i]);
                 Console.WriteLine();
+            }                        
+        }
+
+        public void DrawCC(CardCollection cc)
+        {
+            int width = Console.WindowWidth;
+            int height = Console.WindowHeight;
+            string cCSpaces = "";
+
+            for (int i = 0; i < (width / 2) - (2 * cardWitdh) + 4; i++)
+            {
+                cCSpaces += " ";
             }
-                
-            
 
+            for (int i = 0; i < (height / 2) - (cardHeight + 4); i++)
+            {
+                Console.WriteLine();
 
-
+            }
         }
         public void MainMenu(GameLogic gl)
         {
             int state = 0;
+            DrawMenu(state, "Play", "Difficulty", "Exit");
             while (true)
             {
                 switch (Console.ReadKey().Key)
@@ -223,27 +237,18 @@ namespace poker
                         if (state != 2)
                         {
                             state++;
-                            DrawMenu(state);
+                            DrawMenu(state, "Play", "Difficulty", "Exit");
                         }
                         break;
                     case ConsoleKey.UpArrow:
                         if (state != 0)
                         {
                             state--;
-                            DrawMenu(state);
+                            DrawMenu(state, "Play", "Difficulty", "Exit");
                         }
                         break;
                 }
-
-
-            }
-        
-        
-
-        }
-        
-        
-
+            }             
+        }                
     }
-
 }

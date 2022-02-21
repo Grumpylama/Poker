@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HandEvaluator-Core" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="CardVectorImage">
       <HintPath>..\..\..\..\Desktop\PokerHandEvalExamples\Release\CardVectorImage.dll</HintPath>
     </Reference>
