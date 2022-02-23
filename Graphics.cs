@@ -185,13 +185,15 @@ namespace poker
             string[] sa = new string[] {s1, s2, s3};
             Console.Clear();
             for(int i = 0; i < height / 2 - 3; i++)  
-                Console.WriteLine(); 
+                Console.WriteLine();
 
-            for(int i = 0; i < sa.Length; i++)
+            Console.WriteLine(spaces + "Texas Holdem Poker");
+            Console.WriteLine();
+            for (int i = 0; i < sa.Length; i++)
             {
                 Console.WriteLine(spaces + sa[i]);
                 Console.WriteLine();
-            }                        
+            }             
         }
 
         public void DrawCC(CardCollection cc)

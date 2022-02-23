@@ -12,7 +12,13 @@ namespace poker
         {
             ConsoleHelper.SetCurrentFont("Consolas", 40);
             Graphics g = new Graphics();
-            GameLogic gl = new GameLogic(new List<Player>(), new Deck());
+            List<Player> pl = new List<Player>();
+            pl.Add(new Player(100, "Carl"));
+            pl.Add(new Player(100, "Mike"));
+            pl.Add(new Player(100, "Bike"));
+            Deck d = new Deck();
+            d.ResetDeck();
+            GameLogic gl = new GameLogic(pl, d);
             
             g.MainMenu(gl);
                 

@@ -26,6 +26,7 @@ namespace poker
 
     public class Deck : CardCollection
     {
+        Random random = new Random();
 
         public Deck()
         {
@@ -60,12 +61,9 @@ namespace poker
             }
         }
 
-       
-        //Vi kanske kan göra så att den tar en card som parameter
-        // och sen ritar upp det kortet?
+       //Denna gör error
         public Card DrawCard()
         {
-            Random random = new Random();
             int i = random.Next(Cards.Count - 1);
             Card pickedCard = Cards[i];
             Cards.RemoveAt(i);

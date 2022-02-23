@@ -13,6 +13,11 @@ namespace poker
 		private int betMoney = 0;
 		int bigBlind = 10;
 
+		public void setBlind(Player player)
+        {
+			player.money -= bigBlind;
+			betMoney += bigBlind;
+        }
 		//Match the amount of bigBlind
 		public void Call(Player player)
 		{
@@ -41,7 +46,10 @@ namespace poker
 		public void WinningPrize(List<Player> winners)
         {
 			//This algorithm is unchecked and probably doesnt work
-			int share = winners.Count / Pool;
+			int share;
+			if (winners.Count == 1) share = Pool;
+			else share = Pool / winners.Count;
+
 			for(int i = 0; i < winners.Count; i++)
             {
 				winners[i].money += share;

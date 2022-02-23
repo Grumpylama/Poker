@@ -13,9 +13,6 @@
     <Reference Include="CardVectorImage">
       <HintPath>..\..\..\..\Desktop\PokerHandEvalExamples\Release\CardVectorImage.dll</HintPath>
     </Reference>
-    <Reference Include="HandEvaluator">
-      <HintPath>..\..\..\..\Desktop\PokerHandEvalExamples\Release\HandEvaluator.dll</HintPath>
-    </Reference>
     <Reference Include="OddsGrid">
       <HintPath>..\..\..\..\Desktop\PokerHandEvalExamples\Release\OddsGrid.dll</HintPath>
     </Reference>

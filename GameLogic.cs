@@ -22,13 +22,30 @@ namespace poker
 
         public void StartGame()
         {
-            GameRound();
-            //Next Community card
-            GameRound();
-            //Last Community card
-            GameRound();
-            //Announces winners of the round
+            bool t = true;
+            while (t)
+            {
+                GameRound();
+                if (playerList.Count <= 1)
+                {
+                    t = false;
+                }
+                //Next Community card
+                GameRound();
+                if (playerList.Count <= 1)
+                {
+                    t = false;
+                }
+                //Last Community card
+                GameRound();
+                if (playerList.Count <= 1)
+                {
+                    t = false;
+                }
+            }
+            //Announces winners and gives money
             Winners();
+            ResetGame();
         }
 
         //Represents one full betting round 
@@ -37,6 +54,7 @@ namespace poker
         //and then go for end screen
         public void GameRound()
         {
+            b.setBlind(playerList[0]);
             for(int i = 0; i < playerList.Count; i++)
             {
                 InstantiateHand(playerList[i]);
@@ -45,32 +63,33 @@ namespace poker
             //Betting round
             int temp = playerList[0].money;
             int called = 1;
-            int allFold = 0;
-            int temp1 = playerList[1].money;
+            int temp1 = playerList[0].money;
             while(called != 0)
             {
                 int count = 0;
                 for(int i = 0; i < playerList.Count; i++)
                 {
-                    PlayerTurn(playerList[i]);
-                    temp -= playerList[i].money;
-
                     //Everyone folds
-                    if (playerList.Count == 0)
+                    if (playerList.Count <= 1)
                     {
-                        allFold++;
                         break;
                     }
-
-                    if(temp != 0)
+                    //Everybody calls big blind
+                    if (temp != 0)
                     {
+                        //Takes value of temp1
                         temp = temp1;
-                        temp1 = playerList[i + 1].money;
+                        //Takes value of next players money
+                        if(i > 0) temp1 = playerList[i - 1].money;
                     }
-                    else if(temp == 0) count++;
+                    else if (temp == 0) count++;
+                    else if (playerList[i].money <= 0) playerList.RemoveAt(i);
+
+                    temp -= playerList[i].money;
+                    PlayerTurn(playerList[i]);
                 }
 
-                if (allFold != 0) break;
+                if (playerList.Count <= 1) break;
                 //everyone calls
                 if (count == playerList.Count - 1) called = 0;
             }
@@ -124,6 +143,16 @@ namespace poker
         public List<Player> Winners()
         {
             List<Player> list = new List<Player>();
+
+            //If the rest fold then the one left is winner
+            if (playerList.Count <= 1)
+            {
+                list.Add(playerList[0]);
+                Console.WriteLine("Congratulaions " + playerList[0].name + ", for being the winner of this round!");
+                b.WinningPrize(list);
+                return list;
+            }
+
             HoldemHand.Hand h = HandPoints(playerList[0]);
 
             //Checks how many points the best hand has
@@ -166,8 +195,17 @@ namespace poker
             return hand;
         }
 
-        //Takes a deck and shuffles it
-        //Returns a shuffled copy of the deck
+        //Resets everything
+        public void ResetGame()
+        {
+            //Reset deck
+            deckCards.ResetDeck();
+            //Reset hands
+            foreach(Player player in playerList)
+            {
+                for(int i = 0; i < 2; i++) player.hand.Cards.RemoveAt(i);
+            }
+        }
         
     }
 }
