@@ -23,11 +23,17 @@ namespace poker
 		{
 			betMoney += bigBlind;
 			player.money -= bigBlind;
+			if(player.money < 0)
+            {
+				betMoney -= bigBlind;
+				player.money += bigBlind;
+            }
 		}
 
 		//Increase the bet within player money limits
 		public void Raise(int amount, Player player)
         {
+			int temp = bigBlind;
 			//Set amount to how much more than the bigBlind you want to pay
 			amount += bigBlind;
 			//Increase the betMoney
@@ -36,6 +42,13 @@ namespace poker
 			player.money -= amount;
 			//Update bigBlind
 			bigBlind = amount;
+			//Not let player money go under 0
+			if(player.money < 0)
+            {
+				player.money += amount;
+				betMoney -= amount;
+				bigBlind = temp;
+            }
         }
 
 		public void RoundEnd()

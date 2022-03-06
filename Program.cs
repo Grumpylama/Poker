@@ -21,7 +21,7 @@ namespace poker
             GameLogic gl = new GameLogic(pl, d);
             
             g.MainMenu(gl);
-                
+            g.EndMenu(gl);
 
         }
     }

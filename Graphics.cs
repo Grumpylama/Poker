@@ -251,6 +251,44 @@ namespace poker
                         break;
                 }
             }             
-        }                
+        }
+
+        public void EndMenu(GameLogic gl)
+        {
+            int state = 0;
+            DrawMenu(state, "Play Again", "Exit", "");
+            while (true)
+            {
+                switch (Console.ReadKey().Key)
+                {
+                    case ConsoleKey.Enter:
+                        switch (state)
+                        {
+                            case 0:
+                                gl.StartGame();
+                                break;
+                            case 1:
+                                Environment.Exit(0);
+                                break;
+
+                        }
+                        break;
+                    case ConsoleKey.DownArrow:
+                        if (state != 2)
+                        {
+                            state++;
+                            DrawMenu(state, "Play","Exit","");
+                        }
+                        break;
+                    case ConsoleKey.UpArrow:
+                        if (state != 0)
+                        {
+                            state--;
+                            DrawMenu(state, "Play","Exit","");
+                        }
+                        break;
+                }
+            }
+        }
     }
 }

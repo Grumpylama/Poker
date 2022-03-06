@@ -12,6 +12,7 @@ namespace poker
         CardCollection communityCards = new CardCollection();
         Deck deckCards = new Deck();
         List<Player> playerList = new List<Player>();
+        Graphics graphics = new Graphics();
         //deck.ResetDeck();
 
         public GameLogic(List<Player> players, Deck Deck)
@@ -98,9 +99,9 @@ namespace poker
 
         }
 
+        //Print pool value 
         public void PlayerTurn(Player player)
         {
-            Graphics graphics = new Graphics();
             int action = graphics.askForInput(player, communityCards, "Raise", "Call", "Fold");
 
             switch(action)
@@ -195,7 +196,7 @@ namespace poker
             return hand;
         }
 
-        //Resets everything
+        //Resets all cards
         public void ResetGame()
         {
             //Reset deck
