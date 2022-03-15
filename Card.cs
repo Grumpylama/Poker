@@ -99,7 +99,7 @@ namespace poker
                 case 14:
                     return "│ A       │";
             }
-            throw new Exception("Invalid Card creation");
+            throw new Exception("Invalid Card creation " + value + " is not a valid value for a card");
         }
         protected string GetLowerValueRow()
         {

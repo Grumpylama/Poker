@@ -107,7 +107,17 @@ namespace poker
             switch(action)
             {
                 case 0:
-                    int temp = Int32.Parse(Console.ReadLine());
+                    int temp = 0;
+                    while (true)
+                    {
+                        try
+                        {
+                            temp = Int32.Parse(Console.ReadLine());
+                        }
+                        catch { }
+                        break;
+                    }
+                    
                     b.Raise(temp, player);
                     break;
                 case 1:
