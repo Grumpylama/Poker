@@ -21,6 +21,11 @@ namespace poker
             return s.Trim(' ');
         }
 
+        public void DrawNewCard(Deck d)
+        {
+            Cards.Add(d.DrawCard());
+        }
+
 
     }
 
