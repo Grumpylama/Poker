@@ -21,7 +21,7 @@ namespace poker
             deckCards = Deck;
         }
 
-        public void StartGame()
+        public void StartGame(string[] sa)
         {
             bool t = true;
             communityCards.DrawNewCard(deckCards);
