@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "p4IAGj+E9nHppUbS0ToAYPATuxXjTwwpnV54phC7nKDE/7M/f/NvVx5hnqtuf2JV93BsDX8IlQ/NTu9yx5RwFw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Oscar\\.nuget\\packages\\handevaluator-core\\1.0.1\\handevaluator-core.1.0.1.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "L5Y3hfPtvo/UlcQPoWX0nVw9kX35+ZHb2b00xJL1jtCG+ERcVd+gab1VTYEOdKz6AZYstSZkymmVdsRHHUKgPg==",
+  "success": false,
+  "projectFilePath": "c:\\Users\\manxh\\Documents\\GitHub\\Poker\\poker.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'HandEvaluator-Core (>= 1.0.1)' for 'net5.0'.",
+      "libraryId": "HandEvaluator-Core",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

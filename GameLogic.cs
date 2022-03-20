@@ -8,6 +8,7 @@ namespace poker
 {
     public class GameLogic
     {
+        public string[] players;
         BettingLogic b = new BettingLogic();
         CardCollection communityCards = new CardCollection();
         Deck deckCards = new Deck();
@@ -23,6 +24,7 @@ namespace poker
 
         public void StartGame(string[] sa)
         {
+            players = new string[sa.Length];
             bool t = true;
             communityCards.DrawNewCard(deckCards);
             communityCards.DrawNewCard(deckCards);

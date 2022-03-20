@@ -1,29 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj": {}
+    "c:\\Users\\manxh\\Documents\\GitHub\\Poker\\poker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj": {
+    "c:\\Users\\manxh\\Documents\\GitHub\\Poker\\poker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
+        "projectUniqueName": "c:\\Users\\manxh\\Documents\\GitHub\\Poker\\poker.csproj",
         "projectName": "poker",
-        "projectPath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\poker.csproj",
-        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar\\source\\repos\\Grumpylama\\Poker\\obj\\",
+        "projectPath": "c:\\Users\\manxh\\Documents\\GitHub\\Poker\\poker.csproj",
+        "packagesPath": "C:\\Users\\manxh\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\manxh\\Documents\\GitHub\\Poker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\manxh\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
