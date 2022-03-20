@@ -292,7 +292,7 @@ namespace poker
                         switch (state)
                         {
                             case 0:
-                                gl.StartGame();
+                                gl.StartGame(gl.players);
                                 break;
                             case 1:
                                 Environment.Exit(0);
