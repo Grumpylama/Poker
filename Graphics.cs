@@ -213,6 +213,7 @@ namespace poker
 
             }
         }
+        
         public void MainMenu(GameLogic gl)
         {
             int state = 0;
@@ -224,8 +225,8 @@ namespace poker
                     case ConsoleKey.Enter:
                         switch (state)
                         {
-                            case 0:
-                                gl.StartGame();
+                            case 0:                                
+                                gl.StartGame(getPlayers());
                                 break;
                             case 1: 
                                 break;
@@ -253,6 +254,32 @@ namespace poker
             }             
         }
 
+        public string[] getPlayers()
+        {
+            Console.Clear();
+            Console.WriteLine("How many players are playing");
+            var x = true;
+            int p = 0;
+            while (x)
+            {
+                try
+                {
+                    p = Int32.Parse(Console.ReadLine());
+                    x = false;
+                }
+                catch { }
+            }
+            string[] sa = new string[p];
+            for(int i = 0; i < p; i++)
+            {
+                Console.WriteLine($"What is the name of player {0}", i);
+                sa[i] = Console.ReadLine();
+            }
+            return sa;
+            
+            
+        }
+
         public void EndMenu(GameLogic gl)
         {
             int state = 0;
@@ -265,7 +292,7 @@ namespace poker
                         switch (state)
                         {
                             case 0:
-                                gl.StartGame();
+                                gl.StartGame(gl.players);
                                 break;
                             case 1:
                                 Environment.Exit(0);

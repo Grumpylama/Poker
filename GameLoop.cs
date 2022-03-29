@@ -12,10 +12,11 @@ namespace poker
         bool x;
         void startLoop()
         {
+            
             x = true;
             while (x)
             {
-
+                
 
             }
 

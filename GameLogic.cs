@@ -8,6 +8,7 @@ namespace poker
 {
     public class GameLogic
     {
+        public string[] players;
         BettingLogic b = new BettingLogic();
         CardCollection communityCards = new CardCollection();
         Deck deckCards = new Deck();
@@ -21,9 +22,14 @@ namespace poker
             deckCards = Deck;
         }
 
-        public void StartGame()
+        public void StartGame(string[] sa)
         {
+            players = new string[sa.Length];
             bool t = true;
+            communityCards.DrawNewCard(deckCards);
+            communityCards.DrawNewCard(deckCards);
+            communityCards.DrawNewCard(deckCards);
+
             while (t)
             {
                 GameRound();
@@ -31,13 +37,16 @@ namespace poker
                 {
                     t = false;
                 }
+                communityCards.DrawNewCard(deckCards);
                 //Next Community card
+                
                 GameRound();
                 if (playerList.Count <= 1)
                 {
                     t = false;
                 }
                 //Last Community card
+                communityCards.DrawNewCard(deckCards);
                 GameRound();
                 if (playerList.Count <= 1)
                 {
@@ -107,7 +116,17 @@ namespace poker
             switch(action)
             {
                 case 0:
-                    int temp = Int32.Parse(Console.ReadLine());
+                    int temp = 0;
+                    while (true)
+                    {
+                        try
+                        {
+                            temp = Int32.Parse(Console.ReadLine());
+                        }
+                        catch { }
+                        break;
+                    }
+                    
                     b.Raise(temp, player);
                     break;
                 case 1:
@@ -121,7 +140,7 @@ namespace poker
 
         }
 
-        public CardCollection CommunityC()
+        public void CommunityC()
         {
             for(int i = 0; i < 5; i++)
             {
@@ -129,7 +148,7 @@ namespace poker
 
             }
 
-            return communityCards;
+           
         }
 
         public void InstantiateHand(Player player)
@@ -190,8 +209,8 @@ namespace poker
         //Combines Ccards and each players hand to give overall handScore
         private HoldemHand.Hand HandPoints(Player player)
         {
-            CardCollection c = CommunityC();
-            HoldemHand.Hand hand = new HoldemHand.Hand(player.hand.getValues(), c.getValues());
+            
+            HoldemHand.Hand hand = new HoldemHand.Hand(player.hand.getValues(), communityCards.getValues());
 
             return hand;
         }

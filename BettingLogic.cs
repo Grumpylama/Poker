@@ -7,11 +7,11 @@ namespace poker
 	{
 
 		//The total sum of money that is set on the table
-		private int Pool { get; set; }
+		public int Pool { get; set; }
 
 		//The amount people are willing to bet during said round
 		private int betMoney = 0;
-		int bigBlind = 10;
+		private int bigBlind = 10;
 
 		public void setBlind(Player player)
         {
@@ -19,8 +19,14 @@ namespace poker
 			betMoney += bigBlind;
         }
 		//Match the amount of bigBlind
-		public void Call(Player player)
+		public bool Call(Player player)
 		{
+			if(player.money <= 0)
+            {
+				int temp = (0+player.money);
+				player.money -= temp;
+				return false;
+            }
 			betMoney += bigBlind;
 			player.money -= bigBlind;
 			if(player.money < 0)
@@ -28,11 +34,14 @@ namespace poker
 				betMoney -= bigBlind;
 				player.money += bigBlind;
             }
+			return true;
 		}
 
 		//Increase the bet within player money limits
-		public void Raise(int amount, Player player)
+		public bool Raise(int amount, Player player)
         {
+			if(player.money <= 0) return false;
+
 			int temp = bigBlind;
 			//Set amount to how much more than the bigBlind you want to pay
 			amount += bigBlind;
@@ -49,6 +58,7 @@ namespace poker
 				betMoney -= amount;
 				bigBlind = temp;
             }
+			return true;
         }
 
 		public void RoundEnd()
